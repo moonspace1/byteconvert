@@ -13,7 +13,8 @@ def main():
         print("Outputted: " + output)
     elif (args.bytes):
         output = toString(args.bytes)
-        print("Outputted: " + repr(output))
+        output = repr(output)
+        print("Outputted: " + str(output[2:len(str(output))-1]))
     else:
         print("No arguments inputted, try -s or -b!")
 
